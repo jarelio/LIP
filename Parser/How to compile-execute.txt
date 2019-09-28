@@ -1,1 +1,5 @@
-#Em andamento
+#Para compilar o functor que será executado
+ozc -c ParserFunctor.oz -o ParserFunctor.oza
+
+#Para executar o functor usando a engine:
+ozengine ParserFunctor.oza --in http://www.mozart-oz.org/LICENSE --out LICENSE

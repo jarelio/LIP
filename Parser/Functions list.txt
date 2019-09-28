@@ -1,0 +1,50 @@
+--Função e Funções que a Função usa--
+
+DepthFirst #Não útil pro programa principal
+
+#Ex: Prog utiliza as funções Id e Stat#
+
+Prog
+	Id
+	Stat
+
+Stat
+	Sequence Stat
+	Comp
+	Id
+	Expr
+	IsIdent
+
+Sequence
+	NonTerm
+	Sep
+
+Comp
+	Sequence
+	Expr
+	COP
+
+Expr
+	Sequence
+	Term 
+	EOP
+
+Term
+	Sequence
+	Fact
+	TOP
+
+COP
+EOP
+TOP
+
+Fact
+	IsInt
+	IsIdent
+	Expr
+
+Id
+	IsIdent
+
+IsIdent
+	IsAtom
