@@ -1,0 +1,12 @@
+#Para compilar os functores que serão chamados (cria o .ozf):
+ozc -c TreeFunctor.oz
+
+#Para compilar os functores que possuem operações e serão executados pela engine (cria o .oza):
+ozc -c MainFunctor.oz -o MainFunctor.oza
+
+#Para executar o functor usando a engine:
+ozengine MainFunctor.oza --in http://www.mozart-oz.org/LICENSE --out LICENSE
+
+OBS: se utilizar a engine e executar a depthFirst, só vai mostrar ela pois o Browse é grande e eu não sei setar o tamanho do buffer maior (pela engine, pela GUI é fácil), logo só vai mostrar a ultima operação (as primeiras somem por causa do buffer que é limpado)
+
+OBS2: o arquivo Main.oz pode ser executado na GUI do mozart, logo nele é possível setar o tamanho do buffer e verificar todas as operações juntas
