@@ -1,0 +1,8 @@
+#Para complicar o functor que será utilizado
+ozc -c DigitalLogicFunctor.oz
+
+#Para compilar o functor que será executado
+ozc -c MainFunctor.oz -o MainFunctor.oza
+
+#Para executar o functor usando a engine:
+ozengine MainFunctor.oza --in http://www.mozart-oz.org/LICENSE --out LICENSE
